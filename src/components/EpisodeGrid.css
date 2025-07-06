@@ -1,0 +1,24 @@
+.episode-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 5fr);
+  gap: 5px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.episode-btn {
+  font-weight: bold;
+  background: #a5e2ff;
+  border: 1px solid #aee;
+  color: #000;
+  position: relative;
+}
+
+.episode-btn::after {
+  content: '•';
+  color: green;
+  position: absolute;
+  top: -4px;
+  right: 6px;
+  font-size: 1.2rem;
+}
